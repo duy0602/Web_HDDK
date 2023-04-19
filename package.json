@@ -9,7 +9,7 @@
   "description": "",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false &&react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -17,10 +17,11 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app"
+      "react-app",
+      "react-app/jest"
     ]
   },
-  "homepage": "https://duy0602.github.io/Web_ThoiTrang",
+  "homepage": "https://duy0602.github.io/Website_ThoiTrang/",
   "browserslist": {
     "production": [
       ">0.2%",
